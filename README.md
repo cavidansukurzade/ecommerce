@@ -1,1 +1,1 @@
-Used React,Redux toolkit and Scss for this project
+Used React,Redux toolkit,Scss and some libraries for this project

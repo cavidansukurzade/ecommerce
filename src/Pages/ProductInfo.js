@@ -5,7 +5,9 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cartSlice";
+import { useNavigate } from "react-router-dom";
 const ProductInfo = () => {
+  const navigate=useNavigate()
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -56,7 +58,7 @@ const ProductInfo = () => {
               <button onClick={() => handleAddToCart(product)}>
                 Add to Cart
               </button>
-              <button>Go to Cart</button>
+              <button onClick={()=>navigate("/cart")}>Go to Cart</button>
             </div>
           </div>
         </div>

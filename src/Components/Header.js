@@ -5,9 +5,7 @@ import { useDispatch } from "react-redux";
 import { changeCategory } from "../features/categorySlice";
 import { useState, useEffect } from "react";
 const Header = () => {
-  const [open,setOpen]=useState(false)
   const myFunc=()=>{
-    setOpen(!open);
     document.querySelector(".navbar").classList.toggle("open")
   }
   const dispatch = useDispatch();
