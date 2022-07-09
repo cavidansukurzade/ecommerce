@@ -1,0 +1,21 @@
+#brands {
+    padding:  75px 0px;
+    text-align: center;
+    background-color: #f5f5f7;
+    height: 216px;
+    .swiperslide{
+      height: 80px;
+      width: 176px;
+      border-radius: 8px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: 800px){
+      #brands{
+          display: none;
+      }
+  }

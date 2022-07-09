@@ -1,0 +1,56 @@
+#carousel {
+  margin-bottom: 90px;
+  background: linear-gradient(
+    rgba(245, 146, 146, 0.3) 0%,
+    rgba(244, 194, 194, 0.25) 52.95%,
+    rgba(242, 242, 242, 0) 100%
+  );
+  border-top: 1px solid #2DD06E;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 652px;
+
+    img {
+      height: 60%;
+      margin-top: 90px;
+    }
+    h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    p {
+      width: 450px;
+    }
+    > :nth-child(1) {
+      margin-top: 150px;
+      margin-bottom: 60px;
+      > :nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #carousel {
+    .container {
+      display: flex;
+      height: 600px;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      justify-content: space-between;
+      img {
+        height: 216px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+        width: fit-content;
+      }
+    }
+  }
+}

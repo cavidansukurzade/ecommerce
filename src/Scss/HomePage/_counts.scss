@@ -1,0 +1,102 @@
+#count {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #303030;
+  }
+  span {
+    color: #303030;
+    margin-bottom: 24px;
+  }
+  a {
+    color: #3366ff;
+    text-decoration: none;
+  }
+  .count_first {
+    width: 49%;
+    > :nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      height: 735px;
+      background-color: #e4e9f2;
+      padding: 40px;
+      border-radius: 8px;
+      background-image: url("../../Images/manshirt.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 80%;
+    }
+  }
+  .count_second {
+    width: 49%;
+    > :nth-child(1) {
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      height: 360px;
+      background-color: #e4e9f2;
+      padding: 40px;
+      background-image: url("../../Images/skirt.png");
+      background-repeat: no-repeat;
+      background-position: 95% bottom;
+      border-radius: 8px;
+      background-size: 50%;
+    }
+    > :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      height: 360px;
+      background-color: #e4e9f2;
+      padding: 40px;
+      background-image: url("../../Images/laptop.png");
+      background-repeat: no-repeat;
+      background-position: 95% bottom;
+      border-radius: 8px;
+      background-size: 50%;
+    }
+  }
+}
+@media (max-width: 800px) {
+  #count {
+    flex-direction: column;
+    h3 {
+      font-size: 13.3px;
+    }
+    span {
+      font-size: 8.86px;
+    }
+    a {
+      font-size: 8.86px;
+    }
+    .count_first {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 16px;
+      > :nth-child(1) {
+        padding: 22px;
+        height: 420px;
+        background-position: 100% 100%;
+      }
+    }
+    .count_second {
+      width: 100%;
+      margin: 0px;
+      > :nth-child(1) {
+        height: 198px;
+        margin-bottom: 16px;
+        background-size: 141px 155px;
+        background-position: 90% 100%;
+        padding: 22px;
+      }
+      > :nth-child(2) {
+        height: 198px;
+        background-size: 184px 160px;
+        background-position: 90% 100%;
+        padding: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 600px){
+  .container{
+    width: 95%;
+  }
+}

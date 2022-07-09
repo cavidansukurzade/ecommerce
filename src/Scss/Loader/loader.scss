@@ -1,0 +1,29 @@
+.loadermain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.loader {
+  width: 20%;
+}
+.loader2{
+  width: 30%;
+}
+.loader3,.loader4{
+  width: 40%;
+}
+.homeproductheader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  align-items: center;
+  font-size: 18px;
+}
+@media (max-width: 800px){
+  .loader4{
+    display: none;
+  }
+  .loader3{
+    width: 100%;
+  }
+}

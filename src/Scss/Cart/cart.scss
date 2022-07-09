@@ -1,0 +1,118 @@
+.cart-section {
+  background-color: rgb(242, 240, 240);
+  padding: 60px 0px;
+}
+#cart-container {
+  background-color: white;
+  min-height: 500px;
+  padding: 20px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+  .cart-empty {
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      color: gray;
+    }
+    span {
+      margin-bottom: 70px;
+    }
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    > h3 {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    > :first-child {
+      justify-content: flex-start;
+    }
+  }
+  .cart-items {
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px 0px;
+      border-bottom: 1px solid gray;
+      min-height: 250px;
+      .cart-price span,.cart-total span{
+        display: none;
+      }
+      > div {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        > div {
+          width: 70%;
+        }
+        img {
+          width: 35%;
+          margin-right: 5px;
+        }
+      }
+      > :first-child {
+        justify-content: flex-start;
+      }
+      .cart-quantity {
+        span {
+          margin: 0px 5px;
+        }
+        button {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .clear {
+      button {
+        width: 100px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #cart-container {
+    .titles {
+      display: none;
+    }
+    .cart-items {
+      .cart-item {
+        flex-direction: column;
+        text-align: center;
+        .cart-product {
+          flex-direction: column;
+        }
+        > div {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+        .cart-price span,.cart-total span{
+          display: block;
+        }
+      }
+    }
+  }
+}
