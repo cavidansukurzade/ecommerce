@@ -49,7 +49,7 @@ const Cart = () => {
                     <img src={cartItem.image} alt={cartItem.name} />
                     <div>
                       <h3>{cartItem.title}</h3>
-                      <button onClick={() => handleRemoveFromCart(cartItem)}>
+                      <button className="remover" onClick={() => handleRemoveFromCart(cartItem)}>
                        {'=>'}Remove{'<='}
                       </button>
                     </div>
