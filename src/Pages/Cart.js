@@ -50,7 +50,7 @@ const Cart = () => {
                     <div>
                       <h3>{cartItem.title}</h3>
                       <button onClick={() => handleRemoveFromCart(cartItem)}>
-                        Remove
+                       {'=>'}Remove{'<='}
                       </button>
                     </div>
                   </div>
