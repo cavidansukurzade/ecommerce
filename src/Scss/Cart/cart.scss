@@ -52,6 +52,12 @@
       .cart-price span,.cart-total span{
         display: none;
       }
+      .remover{
+        border:none;
+        background-color: white;
+        cursor: pointer;
+        color: red;
+      }
       > div {
         width: 20%;
         display: flex;
@@ -87,6 +93,9 @@
       button {
         width: 100px;
         height: 30px;
+        border: none;
+        color: red;
+        cursor: pointer;
       }
     }
   }
