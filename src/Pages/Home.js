@@ -16,6 +16,7 @@ const Home = () => {
   const handleChangeFilter = (category) => {
     dispatch(changeCategory(category));
     navigate("/productspage");
+    window.scrollTo(0,0)
   };
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);

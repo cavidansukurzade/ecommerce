@@ -18,12 +18,12 @@
         justify-content: center;
         img {
           width: 213px;
-          height: 180px;
+          height: 170px;
         }
       }
       .product-title {
-        height: 48px;
-        overflow-y: hidden;
+        height: 78px;
+        overflow-y: scroll;
         margin-bottom: 16px;
       }
     }
@@ -44,7 +44,7 @@
      
       .product-card {
         width: 80%;
-        height: 284px;
+        height: 324px;
         margin-right: 16px;
         padding: 16px;
         display: inline-block;
@@ -60,6 +60,7 @@
         }
         .product-title {
           font-size: 14px;
+          overflow-y: scroll;
         }
       }
     }

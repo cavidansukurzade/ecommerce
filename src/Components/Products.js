@@ -11,6 +11,7 @@ const Products = ({product}) => {
           <div className="product-card" key={e.id}
           onClick={() => {
             navigate(`/productspage/${e.id}`);
+            window.scrollTo(0,0)
           }}
           >
             <div className="product-img">
