@@ -15,6 +15,8 @@ header {
       :nth-child(2) {
         margin-right: 16px;
         cursor: pointer;
+        font-size: 34px;
+        color: #2dd06e;
       }
       :nth-child(3) {
         color: #2dd06e;
@@ -63,7 +65,7 @@ header {
     }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   header {
     padding-top: 8px;
     padding-bottom: 30px;

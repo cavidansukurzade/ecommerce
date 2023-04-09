@@ -16,7 +16,7 @@ const Home = () => {
   const handleChangeFilter = (category) => {
     dispatch(changeCategory(category));
     navigate("/productspage");
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
   };
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
@@ -77,14 +77,11 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-                  malesuada et leo faucibus
+                Products given in the carousel dont are not in sale
+                  currently,they are just for advertising
                 </p>
               </div>
-              <img
-                src={require("../Images/carousel.png")}
-                alt="logo not found"
-              />
+              <img src={require("../Images/cloth1.png")} alt="logo not found" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -93,14 +90,11 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-                  malesuada et leo faucibus
+                Products given in the carousel dont are not in sale
+                  currently,they are just for advertising
                 </p>
               </div>
-              <img
-                src={require("../Images/carousel.png")}
-                alt="logo not found"
-              />
+              <img src={require("../Images/cloth2.png")} alt="logo not found" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -109,14 +103,11 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-                  malesuada et leo faucibus
+                  Products given in the carousel dont are not in sale
+                  currently,they are just for advertising
                 </p>
               </div>
-              <img
-                src={require("../Images/carousel.png")}
-                alt="logo not found"
-              />
+              <img src={require("../Images/cloth3.png")} alt="logo not found" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -133,7 +124,9 @@ const Home = () => {
               Məhsul sayi:
               {data.filter((x) => x.category === "men's clothing").length}
             </span>
-            <a href="##" onClick={()=>handleChangeFilter("men's clothing")}>Məhsullara keçid {">"} </a>
+            <a href="##" onClick={() => handleChangeFilter("men's clothing")}>
+              Məhsullara keçid {">"}{" "}
+            </a>
           </div>
         </div>
         <div className="count_second">
@@ -143,12 +136,19 @@ const Home = () => {
               Məhsul sayi:
               {data.filter((x) => x.category === "women's clothing").length}
             </span>
-            <a href="##" onClick={()=>handleChangeFilter("women's clothing")}>Məhsullara keçid {">"} </a>
+            <a href="##" onClick={() => handleChangeFilter("women's clothing")}>
+              Məhsullara keçid {">"}{" "}
+            </a>
           </div>
           <div>
             <h3>Electronics</h3>
-            <span>Məhsul sayi:{data.filter((x) => x.category === "electronics").length}</span>
-            <a href="##" onClick={()=>handleChangeFilter("electronics")}>Məhsullara keçid {">"} </a>
+            <span>
+              Məhsul sayi:
+              {data.filter((x) => x.category === "electronics").length}
+            </span>
+            <a href="##" onClick={() => handleChangeFilter("electronics")}>
+              Məhsullara keçid {">"}{" "}
+            </a>
           </div>
         </div>
       </section>
@@ -232,17 +232,21 @@ const Home = () => {
       <Carousel />
       <div className="homeproductheader container">
         <div>Kisi geyimleri</div>
-        <div onClick={()=>handleChangeFilter("men's clothing")}>Hamisina baxin</div>
+        <div onClick={() => handleChangeFilter("men's clothing")}>
+          Hamisina baxin
+        </div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(0, 4)} />}
       <div className="homeproductheader container">
         <div>Bezek esyalari</div>
-        <div onClick={()=>handleChangeFilter("jewelery")}>Hamisina baxin</div>
+        <div onClick={() => handleChangeFilter("jewelery")}>Hamisina baxin</div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(4, 8)} />}
       <div className="homeproductheader container">
         <div>Teniki vasiteler</div>
-        <div onClick={()=>handleChangeFilter("electronics")}>Hamisina baxin</div>
+        <div onClick={() => handleChangeFilter("electronics")}>
+          Hamisina baxin
+        </div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(8, 12)} />}
       <Counts />

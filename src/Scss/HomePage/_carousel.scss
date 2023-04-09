@@ -10,9 +10,8 @@
     display: flex;
     justify-content: space-between;
     height: 652px;
-
     img {
-      height: 60%;
+      height: 55%;
       margin-top: 90px;
     }
     h1 {
@@ -31,7 +30,7 @@
     }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   #carousel {
     .container {
       display: flex;
@@ -42,7 +41,8 @@
       width: 100%;
       justify-content: space-between;
       img {
-        height: 216px;
+        height: 256px;
+        margin-bottom: -50px;
       }
       h1 {
         font-size: 24px;

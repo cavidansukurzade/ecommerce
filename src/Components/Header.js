@@ -35,13 +35,9 @@ const Header = () => {
       <div className="headertop">
         <div>
           <img src={require("../Images/menu.png")} alt="" onClick={()=>myFunc()}/>
-          <img
-            src={require("../Images/Tello.png")}
-            alt=""
-            onClick={() => {
+          <i class="fa-solid fa-house" onClick={() => {
               navigate("/");
-            }}
-          />
+            }}></i>
           <h1
             onClick={() => {
               navigate("/");

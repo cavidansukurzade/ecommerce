@@ -14,7 +14,7 @@ footer {
           font-size: 34px;
           margin-bottom: 27px;
           color: #2dd06e;
-          img {
+          i {
             margin-right: 16px;
           }
         }
@@ -91,7 +91,7 @@ footer {
       }
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     footer {
       height: fit-content;
       hr{
