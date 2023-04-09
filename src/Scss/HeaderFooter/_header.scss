@@ -60,7 +60,6 @@ header {
     li {
       margin-right: 56px;
       cursor: pointer;
-      color: white;
     }
   }
 }
@@ -70,6 +69,7 @@ header {
     padding-bottom: 30px;
     ul {
       display: none;
+      color: white;
     }
     .headertop {
       position: relative;
