@@ -77,7 +77,7 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                Products given in the carousel dont are not in sale
+                Products given in the carousel are not in sale
                   currently,they are just for advertising
                 </p>
               </div>
@@ -90,7 +90,7 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                Products given in the carousel dont are not in sale
+                Products given in the carousel are not in sale
                   currently,they are just for advertising
                 </p>
               </div>
@@ -103,7 +103,7 @@ const Home = () => {
                 <h1>Buy & Sell</h1>
                 <h1>What's Now & Next</h1>
                 <p>
-                  Products given in the carousel dont are not in sale
+                  Products given in the carousel are not in sale
                   currently,they are just for advertising
                 </p>
               </div>
