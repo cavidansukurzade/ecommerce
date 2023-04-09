@@ -58,7 +58,7 @@ const ProductInfo = () => {
               <button onClick={() => handleAddToCart(product)}>
                 Add to Cart
               </button>
-              <button onClick={()=>navigate("/cart")}>Go to Cart</button>
+              <button onClick={()=>{navigate("/cart");window.scrollTo(0,100)}}>Go to Cart</button>
             </div>
           </div>
         </div>

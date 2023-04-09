@@ -51,7 +51,7 @@ const Header = () => {
           </h1>
         </div>
         <div>
-          <input type="text" placeholder="Axtarış..." />
+          <input type="text" placeholder="Not working for now" />
           <i className="fas fa-search"></i>
         </div>
         <div>
