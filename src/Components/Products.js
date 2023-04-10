@@ -5,7 +5,6 @@ const Products = ({product}) => {
   let navigate = useNavigate();
   return (
     <section id="productsection" className="container">
-
       <div className="products">
         {product.map((e) => (
           <div className="product-card" key={e.id}

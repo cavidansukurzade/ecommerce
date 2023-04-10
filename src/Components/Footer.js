@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footermain container">
         <div className="footer_icons">
           <div>
-          <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i>
             <span>Project</span>
           </div>
           <div>
@@ -19,22 +19,22 @@ const Footer = () => {
         <div className="footer_menu">
           <h3>Menu</h3>
           <ul>
-            <li>Yeni</li>
-            <li>Endirimlər</li>
-            <li>Aksessuarlar</li>
-            <li>Bütün brendlər</li>
+            <li>New</li>
+            <li>Discounts</li>
+            <li>Accesories</li>
+            <li>All brands</li>
           </ul>
         </div>
         <div className="footer_help">
-          <h3>Kömək</h3>
+          <h3>Help</h3>
           <ul>
-            <li>Tez-tez soruşulan suallar</li>
-            <li>Çatdirilma xidməti</li>
-            <li>Geri qaytarilma şərtləri</li>
+            <li>Frequently asked questions</li>
+            <li>Delivery service</li>
+            <li>Refund information</li>
           </ul>
         </div>
         <div className="footer_connect">
-          <h3>Əlaqə</h3>
+          <h3>Contact</h3>
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
@@ -54,11 +54,11 @@ const Footer = () => {
       <hr />
       <div className="footerbottom container">
         <span>
-          <span>©</span>PeojectX 2021. Bütün hüquqlar qorunur.
+          <span>©</span>PeojectX 2021. All rights reserved.
         </span>
         <div>
-          <span>Qaydalar və şərtlər</span>
-          <span>Məxfilik siyasəti</span>
+          <span>Terms and conditions</span>
+          <span>Privacy policy</span>
         </div>
       </div>
     </footer>

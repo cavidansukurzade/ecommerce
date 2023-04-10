@@ -43,17 +43,17 @@ const Home = () => {
       <section id="advantages" className="container">
         <div>
           <img src={require("../Images/box.png")} alt="" />
-          <span>Çatdirilma</span>
+          <span>Delivery</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
         </div>
         <div>
           <img src={require("../Images/credit.png")} alt="" />
-          <span>Kredit</span>
+          <span>Credit</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
         </div>
         <div>
           <img src={require("../Images/achievement.png")} alt="" />
-          <span>Zəmanət</span>
+          <span>Guarantee</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
         </div>
       </section>
@@ -121,11 +121,11 @@ const Home = () => {
           <div>
             <h3>Men's clothes</h3>
             <span>
-              Məhsul sayi:
+              Product count:
               {data.filter((x) => x.category === "men's clothing").length}
             </span>
             <a href="##" onClick={() => handleChangeFilter("men's clothing")}>
-              Məhsullara keçid {">"}{" "}
+            Go to products {">"}{" "}
             </a>
           </div>
         </div>
@@ -133,21 +133,21 @@ const Home = () => {
           <div>
             <h3>Women's clothes</h3>
             <span>
-              Məhsul sayi:
+            Product count:
               {data.filter((x) => x.category === "women's clothing").length}
             </span>
             <a href="##" onClick={() => handleChangeFilter("women's clothing")}>
-              Məhsullara keçid {">"}{" "}
+            Go to products {">"}{" "}
             </a>
           </div>
           <div>
             <h3>Electronics</h3>
             <span>
-              Məhsul sayi:
+            Product count:
               {data.filter((x) => x.category === "electronics").length}
             </span>
             <a href="##" onClick={() => handleChangeFilter("electronics")}>
-              Məhsullara keçid {">"}{" "}
+              Go to products {">"}{" "}
             </a>
           </div>
         </div>
@@ -231,21 +231,21 @@ const Home = () => {
     <>
       <Carousel />
       <div className="homeproductheader container">
-        <div>Kisi geyimleri</div>
+        <div>Men's clothes</div>
         <div onClick={() => handleChangeFilter("men's clothing")}>
-          Hamisina baxin
+          See all
         </div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(0, 4)} />}
       <div className="homeproductheader container">
-        <div>Bezek esyalari</div>
-        <div onClick={() => handleChangeFilter("jewelery")}>Hamisina baxin</div>
+        <div>Jewelery</div>
+        <div onClick={() => handleChangeFilter("jewelery")}>See all</div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(4, 8)} />}
       <div className="homeproductheader container">
-        <div>Teniki vasiteler</div>
+        <div>Techniques</div>
         <div onClick={() => handleChangeFilter("electronics")}>
-          Hamisina baxin
+        See all
         </div>
       </div>
       {loading ? <Loader /> : <Products product={filter.slice(8, 12)} />}

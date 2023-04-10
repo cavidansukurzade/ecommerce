@@ -6,10 +6,11 @@
 .loader {
   width: 20%;
 }
-.loader2{
+.loader2 {
   width: 30%;
 }
-.loader3,.loader4{
+.loader3,
+.loader4 {
   width: 40%;
 }
 .homeproductheader {
@@ -18,12 +19,15 @@
   margin-bottom: 32px;
   align-items: center;
   font-size: 18px;
+  div {
+    cursor: pointer;
+  }
 }
-@media (max-width: 850px){
-  .loader4{
+@media (max-width: 850px) {
+  .loader4 {
     display: none;
   }
-  .loader3{
+  .loader3 {
     width: 100%;
   }
 }

@@ -38,7 +38,7 @@ const ProductsPage = () => {
     return (
       <div className="aside">
         <div>
-          <span>Filtr(4)</span>
+          <span>Filter(4)</span>
           <span>-</span>
         </div>
         <div>

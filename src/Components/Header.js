@@ -62,13 +62,15 @@ const Header = () => {
           />
         </div>
       </div>
-      <nav className="navbar" onClick={()=>myFunc()}>
+      <nav className="navbar" >
         <ul id="headermenu">
           {data.map((e) => (
             <li key={e} onClick={() => handleChangeFilter(e)}>
               {e.slice(0,1).toUpperCase()+e.slice(1)}
             </li>
+            
           ))}
+          <div className="menuCloser"><button onClick={()=>myFunc()}>Close</button></div>
         </ul>
       </nav>
     </header>
