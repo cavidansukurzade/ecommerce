@@ -65,7 +65,7 @@ const Header = () => {
       <nav className="navbar" >
         <ul id="headermenu">
           {data.map((e) => (
-            <li key={e} onClick={() => handleChangeFilter(e)}>
+            <li key={e} onClick={() => {handleChangeFilter(e);myFunc()}}>
               {e.slice(0,1).toUpperCase()+e.slice(1)}
             </li>
             
