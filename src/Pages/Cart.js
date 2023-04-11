@@ -12,6 +12,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   useEffect(() => {
     dispatch(getTotals());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart]);
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));

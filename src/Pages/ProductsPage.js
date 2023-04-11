@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef } from "react";
 import "../Scss/style.scss";
 import Products from "../Components/Products";
 import Skeleton from "react-loading-skeleton";
@@ -12,7 +12,7 @@ const ProductsPage = () => {
   const dispatch=useDispatch()
   const category = useSelector((state) => state.category.category);
   console.log(category);
-  let componentMounted = true;
+  let componentMounted = useRef(true);
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
@@ -24,10 +24,11 @@ const ProductsPage = () => {
         console.log(filter);
       }
       return () => {
-        componentMounted = false;
+        componentMounted.current = false;
       };
     };
     getProducts();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[category]);
   const Aside = () => {
     const filterProduct = (cat) => {

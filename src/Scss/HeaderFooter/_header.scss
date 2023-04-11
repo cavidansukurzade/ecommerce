@@ -67,7 +67,7 @@ header {
       display: none;
       button {
         border-radius: 10px;
-        background-color: rgb(96, 189, 226);
+        background-color: black;
         border: none;
         color: white;
         width: 80px;
@@ -134,8 +134,7 @@ header {
     height: 100vh;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 1);
-    color: rgb(96, 189, 226);
-    padding-top: 10px;
+    padding-top: 30px;
     #headermenu {
       display: flex;
       flex-direction: column;
@@ -145,20 +144,23 @@ header {
         width: 100%;
         margin: 0;
         font-size: 30px;
-        margin-bottom: 20px;
-        background-color: rgba(21, 196, 235, 0.5);
-        padding: 10px 0px 10px 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
         transition: 0.5s;
         &:hover {
-          background-color: red;
+          color: red;
         }
       }
       .menuCloser {
         background-color: white;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
-        padding-right: 20px;
+        margin-top: 40px;
         button {
           transition: 0.5s;
           &:hover {

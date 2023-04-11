@@ -25,6 +25,7 @@ const cartSlice = createSlice({
           position:toast.POSITION.BOTTOM_LEFT
         });
       }
+      state.cartTotalQuantity++
     },
     removeFromCart(state, action) {
       const nextCartItems = state.cartItems.filter(
@@ -75,7 +76,7 @@ const cartSlice = createSlice({
           const { price, cartQuantity } = cartItem;
           const itemTotal = price * cartQuantity;
           cartTotal.total += itemTotal;
-          cartTotal.quantity = cartQuantity;
+          cartTotal.quantity += cartQuantity;
           return cartTotal;
         },
         {

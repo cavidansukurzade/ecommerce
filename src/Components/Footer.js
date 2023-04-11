@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footermain container">
         <div className="footer_icons">
           <div>
-            <i class="fa-solid fa-house"></i>
+            <i className="fa-solid fa-house"></i>
             <span>Project</span>
           </div>
           <div>
