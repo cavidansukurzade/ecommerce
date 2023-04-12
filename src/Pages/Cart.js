@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useRef} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   getTotals,
@@ -8,6 +8,7 @@ import {
   removeFromCart,
 } from "../features/cartSlice";
 const Cart = () => {
+  let container=useRef()
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   useEffect(() => {
@@ -16,7 +17,7 @@ const Cart = () => {
   }, [cart]);
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));
-    window.scrollTo(0,document.getElementById("cart-container").offsetTop+40)
+    window.scrollTo(0,container.current.offsetTop)
   };
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
@@ -26,11 +27,11 @@ const Cart = () => {
   };
   const handleClearCart = () => {
     dispatch(clearCart());
-    window.scrollTo(0,document.getElementById("cart-container").offsetTop+40)
+    window.scrollTo(0,0)
   };
   return (
     <div className="cart-section">
-      <div id="cart-container" className="container">
+      <div id="cart-container" ref={container} className="container">
         <h2>Shopping Cart</h2>
         {cart.cartItems.length === 0 ? (
           <div className="cart-empty">
