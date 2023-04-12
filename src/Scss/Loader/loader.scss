@@ -14,8 +14,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  .loader2 {
+  > :nth-child(n) {
     width: 30%;
+    display: block;
+  }
+  > :nth-child(3) {
+    display: block;
   }
 }
 
@@ -55,19 +59,19 @@
       width: 100%;
     }
   }
-}
-.loadermain2::-webkit-scrollbar {
-  display: none;
-}
-.loadermain2 {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.loadermain2 {
-  >:nth-child(n){
-    width: 48%;
-  }
-  >:nth-child(3){
+  .loadermain2::-webkit-scrollbar {
     display: none;
+  }
+  .loadermain2 {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .loadermain2 {
+    > :nth-child(n) {
+      width: 48%;
+    }
+    > :nth-child(3) {
+      display: none;
+    }
   }
 }
