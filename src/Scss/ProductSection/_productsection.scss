@@ -18,7 +18,7 @@
         display: flex;
         justify-content: center;
         img {
-          width: 213px;
+          width: 90%;
           height: 170px;
         }
       }
@@ -30,7 +30,7 @@
     }
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
   #productsection {
     .products::-webkit-scrollbar {
       display: none;
@@ -43,7 +43,7 @@
       overflow-x: auto;  
       flex-wrap:nowrap; 
       .product-card {
-        width: 80%;
+        width: 193px;
         height: 324px;
         margin-right: 16px;
         padding: 16px;
@@ -53,7 +53,7 @@
           padding-left: 30px;
           padding-right: 30px;
           img {
-            width: 101px;
+            width: 170px;
             height: 142px;
           }
         }

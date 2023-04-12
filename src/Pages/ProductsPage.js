@@ -63,7 +63,7 @@ const ProductsPage = () => {
   const Loader = () => {
     return (
       <>
-      <div className="loadermain container">
+      <div className="loadermain2 container">
       <div className="loader2">
         <Skeleton height={330} />
       </div>
