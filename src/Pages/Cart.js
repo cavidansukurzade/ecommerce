@@ -17,7 +17,7 @@ const Cart = () => {
   }, [cart]);
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));
-    window.scrollTo(0,container.current.offsetTop)
+    window.scrollTo(0,document.getElementById("cart-container").offsetTop)
   };
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
@@ -27,7 +27,7 @@ const Cart = () => {
   };
   const handleClearCart = () => {
     dispatch(clearCart());
-    window.scrollTo(0,0)
+    window.scrollTo(0,document.getElementById("cart-container").offsetTop+40)
   };
   return (
     <div className="cart-section">
