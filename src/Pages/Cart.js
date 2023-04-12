@@ -26,7 +26,7 @@ const Cart = () => {
   };
   const handleClearCart = () => {
     dispatch(clearCart());
-    window.scrollTo(0,document.getElementById("cart-container").offsetTop+40)
+    window.scrollTo(0,0)
   };
   return (
     <div className="cart-section">
