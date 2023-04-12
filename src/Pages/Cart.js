@@ -16,6 +16,7 @@ const Cart = () => {
   }, [cart]);
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));
+    window.scrollTo(0,document.getElementById("cart-container").offsetTop+40)
   };
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
